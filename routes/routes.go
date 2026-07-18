@@ -33,5 +33,6 @@ func RegisterRoutes(router *gin.Engine) {
 				"data": []string{"Apple", "Mango", "Banana"},
 			})
 		})
+		api.POST("/upload-photo", controllers.UploadPhoto)
 	}
 }
